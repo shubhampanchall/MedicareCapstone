@@ -1,0 +1,899 @@
+package TestCases;
+
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.NoAlertPresentException;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Test;
+
+public class WebPage {
+	
+	WebDriver driver;
+	
+	// Constructor
+	public WebPage(WebDriver driver) {
+
+		this.driver = driver;
+
+		PageFactory.initElements(driver, this);
+
+	
+	}
+	
+	
+		
+	
+	 @FindBy(xpath="//a[normalize-space()='Sign Up']")
+     WebElement signup ;
+	 
+	 @FindBy(xpath="//input[@id='firstName']")
+     WebElement First ;
+	 
+	 @FindBy(xpath="//input[@id='lastName']")
+     WebElement last ;
+	 
+	 @FindBy(xpath="//input[@id='email']")
+     WebElement email ;
+	 
+	 @FindBy(xpath="//input[@id='contactNumber']")
+     WebElement contact ;
+	 
+	 @FindBy(xpath="//input[@id='password']")
+     WebElement password ;
+	 
+	 @FindBy(xpath="//input[@id='confirmPassword']")
+     WebElement confirmpassword ;
+	 
+	 
+	 @FindBy(xpath="//input[@id='role2']")
+     WebElement supplier ;
+	 
+	 @FindBy(xpath="//button[normalize-space()='Next - Billing']")
+     WebElement Buliding ;
+	 
+	 
+	 @FindBy(xpath="//input[@id='addressLineOne']")
+     WebElement Address ;
+	 
+	 @FindBy(xpath="//input[@id='addressLineTwo']")
+     WebElement Address2 ;
+	 
+	 @FindBy(xpath="//input[@id='city']")
+     WebElement City ;
+	 
+	 @FindBy(xpath="//input[@id='postalCode']")
+     WebElement postalCode ;
+	 
+	 @FindBy(xpath="//input[@id='state']")
+     WebElement state ;
+	 
+	 @FindBy(xpath="//input[@id='country']")
+     WebElement country ;
+	 
+	 @FindBy(xpath="//button[normalize-space()='Next - Confirm']")
+     WebElement Next ;
+	 
+	 
+
+	 @FindBy(xpath="//a[normalize-space()='Confirm']")
+	 WebElement Confirm;
+	 
+	 
+	 @FindBy(xpath="//body/div[@class='wrapper']/div[@class='content']/div[@class='container']/div[2]")
+	 WebElement Savepop;
+	 
+	 
+	 
+	 @FindBy(xpath="//a[normalize-space()='Login Here']")
+	 WebElement Login;
+	 
+	 @FindBy(xpath="//input[@id='username']")
+	 WebElement LogMail;
+	 
+	 
+	 @FindBy(xpath="//input[@id='password']")
+	 WebElement LogPassword;
+	 
+	 
+	 @FindBy(xpath="//input[@value='Login']")
+	 WebElement Login1;
+
+	 @FindBy(xpath="//a[@id='dropdownMenu1']")
+	 WebElement Shubham ;
+
+	 @FindBy(xpath="//a[normalize-space()='Logout']")
+	 WebElement LogOut;
+	 
+	 
+	 
+	 
+	 //// USer///
+	 
+	 
+	 
+		@FindBy(xpath="//a[normalize-space()='Sign Up']")
+		WebElement signup1;
+		
+		 @FindBy(xpath="//input[@id='firstName']")
+	     WebElement First1 ;
+		 
+		 @FindBy(xpath="//input[@id='lastName']")
+	     WebElement last1 ;
+		 
+		 @FindBy(xpath="//input[@id='email']")
+	     WebElement email1 ;
+		 
+		 @FindBy(xpath="//input[@id='contactNumber']")
+	     WebElement contact1 ;
+		 
+		 @FindBy(xpath="//input[@id='password']")
+	     WebElement password1 ;
+		 
+		 @FindBy(xpath="//input[@id='confirmPassword']")
+	     WebElement confirmpassword1 ;
+		 
+		 
+		 @FindBy(xpath="(//input[@id='role1'])[1]")
+	     WebElement User ;
+		 
+		 @FindBy(xpath="//button[normalize-space()='Next - Billing']")
+	     WebElement Buliding1 ;
+		 
+		 
+		 @FindBy(xpath="//input[@id='addressLineOne']")
+	     WebElement Address1 ;
+		 
+		 @FindBy(xpath="//input[@id='addressLineTwo']")
+	     WebElement Address12 ;
+		 
+		 @FindBy(xpath="//input[@id='city']")
+	     WebElement City1 ;
+		 
+		 @FindBy(xpath="//input[@id='postalCode']")
+	     WebElement postalCode1 ;
+		 
+		 @FindBy(xpath="//input[@id='state']")
+	     WebElement state1 ;
+		 
+		 @FindBy(xpath="//input[@id='country']")
+	     WebElement country1 ;
+		 
+		 @FindBy(xpath="//button[normalize-space()='Next - Confirm']")
+	     WebElement Next1 ;
+		 
+		 
+
+		 @FindBy(xpath="//a[normalize-space()='Confirm']")
+		 WebElement Confirm1;
+		 
+		 
+		 @FindBy(xpath="//body/div[@class='wrapper']/div[@class='content']/div[@class='container']/div[2]")
+		 WebElement Savepop1;
+		 
+		 
+		 
+		 @FindBy(xpath="//a[normalize-space()='Login Here']")
+		 WebElement Login12;
+		 
+		 @FindBy(xpath="//input[@id='username']")
+		 WebElement LogMail1;
+		 
+		 
+		 @FindBy(xpath="//input[@id='password']")
+		 WebElement LogPassword1;
+		 
+		 
+		 @FindBy(xpath="//input[@value='Login']")
+		 WebElement Login11;
+
+		 @FindBy(xpath="//a[@id='dropdownMenu1']")
+		 WebElement Shubham1 ;
+		
+		 @FindBy(xpath="//div[3]//div[1]//div[1]//div[1]//a[1]")
+		 WebElement Veiw ;
+		
+		 @FindBy(xpath="//a[normalize-space()='Add to Cart']")
+		 WebElement Cart ;
+		 
+		 @FindBy(xpath="//a[normalize-space()='Checkout']")
+		 WebElement checkout;
+		 
+		 @FindBy(xpath="//input[@id='addressLineOne']")
+		 WebElement AddressLineOne;
+		 
+		 @FindBy(xpath="//input[@id='addressLineTwo']")
+		 WebElement AddressLineTwo;
+		 
+		 @FindBy(xpath="//input[@id='city']")
+		 WebElement City33;
+		 
+		 @FindBy(xpath="//input[@id='postalCode']")
+		 WebElement PostalCode33;
+		 
+		 @FindBy(xpath="//input[@id='state']")
+		 WebElement State33;
+		 
+		 @FindBy(xpath="//input[@id='country']")
+		 WebElement Country33;
+		 
+		 @FindBy(xpath="//button[normalize-space()='Add Address']")
+		 WebElement AddAdress;
+		 
+		 
+		@FindBy(xpath="//a[normalize-space()='Continue Shopping']")
+		WebElement Continue;
+		
+		 @FindBy(xpath="//tbody/tr[3]/td[6]/a[2]/span[1]")
+		 WebElement Diclofenac;
+		 
+		 @FindBy(xpath="//a[normalize-space()='Continue Shopping']")
+			WebElement Continue1;
+		 
+		 @FindBy(xpath="//tbody/tr[5]/td[6]/a[2]/span[1]")
+		 WebElement Amoxicillin;
+		 
+		 @FindBy(xpath="//a[normalize-space()='Continue Shopping']")
+			WebElement Continue2;
+		 
+		 
+		 @FindBy(xpath="//body[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[4]/td[6]/a[2]")
+		 WebElement Aceclofenac;
+		 
+		 
+		 @FindBy(xpath="//a[normalize-space()='Checkout']")
+		 WebElement checkout2;
+		 
+		 @FindBy(xpath="//input[@id='addressLineOne']")
+		 WebElement AddressLineOne33;
+		 
+		 @FindBy(xpath="//input[@id='addressLineTwo']")
+		 WebElement AddressLineTwo33;
+		 
+		 @FindBy(xpath="//input[@id='city']")
+		 WebElement City3333;
+		 
+		 @FindBy(xpath="//input[@id='postalCode']")
+		 WebElement PostalCode3333;
+		 
+		 @FindBy(xpath="//input[@id='state']")
+		 WebElement State3333;
+		 
+		 @FindBy(xpath="//input[@id='country']")
+		 WebElement Country3333;
+		 
+		 @FindBy(xpath="//button[normalize-space()='Add Address']")
+		 WebElement AddAdress33;
+	 
+		 
+		 
+		 
+		 
+	 public void ClickSign() {
+		 
+		 signup.click();
+	 }
+	 
+	 
+	 public void FirstName() {
+		
+		 First.sendKeys("shubham");
+		 
+	 }
+	 
+	 public void LastName() {
+			
+		 last.sendKeys("panchal");
+		 
+	 }
+	 
+	 public void EmailId() {
+		 
+		 email.sendKeys("shubhampanchal10@gmail.com");
+	 }
+	 
+	 public void ClickContact() {
+		 
+		 contact.sendKeys("22546897215");
+		 
+	 }
+	 
+ public void EnterPass() {
+		 
+	 password.sendKeys("@Test123");
+		 
+	 }
+ 
+ public void Confirmpass() {
+	 
+	 confirmpassword.sendKeys("@Test123");
+	 
+ }
+ 
+ public void ClickSupplier() {
+	 
+	 User.click();
+	 
+ }
+ 
+ 
+ public void NextBuliding() {
+	 
+	 Buliding.click();
+	 try {
+		Thread.sleep(4000);
+	} catch (InterruptedException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+ }
+
+ 
+public void PutAddress() {
+	 
+	Address.sendKeys("Shivaji maharaj Square");
+	 
+ }
+
+public void PutAddress2() {
+	
+	Address2.sendKeys("Sambhaji Maharaj Colony");
+}
+
+
+public void EnterCity() {
+	
+	City.sendKeys("Pune");
+	
+}
+
+
+public void EnterPostaCode() {
+	
+	postalCode.sendKeys("413512");
+	
+}
+
+public void EnterState() {
+	
+	state.sendKeys("Maharashtra");
+	
+}
+
+public void Entercountry() {
+	
+	country.sendKeys("India");
+	
+}
+
+
+public void EnterNext() {
+	
+	Next.click();
+	try {
+		Thread.sleep(4000);
+	} catch (InterruptedException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+}
+
+
+public void clickConfirm() {
+	
+	Confirm.click();
+	try {
+		Thread.sleep(4000);
+	} catch (InterruptedException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	
+	
+
+	}
+	
+
+
+public void clickLogin() {
+	
+	Login.click();
+}
+
+
+
+public void ClickLogMail () {
+	
+	LogMail.sendKeys("shubhampancha10@gmail.com");
+}
+
+
+
+
+public void ClickLogPassword() {
+	
+	LogPassword.sendKeys("@Test123");
+}
+
+
+public void ClickLogin1() {
+	
+	Login1.click();
+	
+	
+	try {
+		Thread.sleep(2000);
+	} catch (InterruptedException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	
+	try {
+        Alert alert = driver.switchTo().alert();
+        alert.dismiss(); // Click the "Save" button in the alert
+        // Alternatively, use alert.dismiss() to click the "No Thanks" button
+    } catch (NoAlertPresentException e) {
+        // No alert appeared, handle the situation accordingly
+        // You can also log the exception or take any other desired action
+    }
+	
+
+}
+
+public void ClickShubham() {
+	
+	Shubham.click();
+}
+
+public void ClickLogOut() {
+	
+	LogOut.click();
+}
+
+
+
+
+
+
+                 ///  USer///
+
+
+
+
+
+
+public void ClickSignup1() {
+	
+	signup1.click();
+	
+}
+
+public void FirstName1() {
+	
+	First1.sendKeys("shubham");
+	 
+}
+
+public void LastName1() {
+		
+	 last1.sendKeys("panchal");
+	 
+}
+
+public void EmailId1() {
+	 
+	 email1.sendKeys("shubhampanchal555555@gmail.com");
+}
+
+public void ClickContact1() {
+	 
+	 contact1.sendKeys("22546897215");
+	 
+}
+
+public void EnterPass1() {
+	 
+password1.sendKeys("123456");
+	 
+}
+
+public void Confirmpass1() {
+
+confirmpassword1.sendKeys("123456");
+
+}
+
+public void ClickUser() {
+
+User.click();
+
+}
+
+
+public void NextBuliding1() {
+
+Buliding1.click();
+try {
+	Thread.sleep(4000);
+} catch (InterruptedException e) {
+	// TODO Auto-generated catch block
+	e.printStackTrace();
+}
+}
+
+
+public void PutAddress1() {
+
+Address1.sendKeys("Shivaji maharaj Square");
+
+}
+
+public void PutAddress21() {
+
+Address12.sendKeys("Sambhaji Maharaj Colony");
+}
+
+
+public void EnterCity1() {
+
+City1.sendKeys("Pune");
+
+}
+
+
+public void EnterPostaCode1() {
+
+postalCode1.sendKeys("413512");
+
+}
+
+public void EnterState1() {
+
+state1.sendKeys("Maharashtra");
+
+}
+
+public void Entercountry1() {
+
+country1.sendKeys("India");
+
+}
+
+
+public void EnterNext1() {
+
+Next1.click();
+try {
+	Thread.sleep(4000);
+} catch (InterruptedException e) {
+	// TODO Auto-generated catch block
+	e.printStackTrace();
+}
+
+try {
+	   Alert alert = driver.switchTo().alert();
+	   alert.dismiss(); // Click the "Save" button in the alert
+	   // Alternatively, use alert.dismiss() to click the "No Thanks" button
+	} catch (NoAlertPresentException e) {
+	   // No alert appeared, handle the situation accordingly
+	   // You can also log the exception or take any other desired action
+	}
+
+}
+
+
+public void clickConfirm1() {
+
+Confirm1.click();
+try {
+	Thread.sleep(4000);
+} catch (InterruptedException e) {
+	// TODO Auto-generated catch block
+	e.printStackTrace();
+}
+
+
+
+}
+
+
+
+public void clickLogin1() {
+
+Login12.click();
+}
+
+
+
+public void ClickLogMail1 () {
+
+LogMail1.sendKeys("shubhampanchal555555@gmail.com");
+}
+
+
+
+
+public void ClickLogPassword1() {
+
+LogPassword1.sendKeys("123456");
+}
+
+
+public void ClickLogin12() {
+
+Login11.click();
+
+
+try {
+	Thread.sleep(2000);
+} catch (InterruptedException e) {
+	// TODO Auto-generated catch block
+	e.printStackTrace();
+}
+
+
+
+}
+
+public void ParacetamolVeiw() {
+	
+	
+	Veiw.click();
+	
+	try {
+		Thread.sleep(2000);
+	} catch (InterruptedException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+}
+
+public void AddtoCart() {
+	
+	boolean Carts=Cart.isSelected();
+	if (Carts) {
+
+		System.out.println("item is not  selected ");
+
+	} else {
+		System.out.println("one item is selected");
+	}
+
+	
+	Cart.click();
+	try {
+		Thread.sleep(4000);
+	} catch (InterruptedException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+}
+
+public void ClickCheckout() {
+	
+	checkout.click();
+	
+	//driver.navigate().back();
+	
+	try {
+		Thread.sleep(2000);
+	} catch (InterruptedException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+}
+
+
+
+public void ClickAddressLineOne() {
+	
+	AddressLineOne.sendKeys("Shivaji maharaj Square");
+}
+
+
+public void ClickAddressLineTwo() {
+	
+	AddressLineTwo.sendKeys("Sambhaji Maharaj Colony");
+}
+
+public void ClickCity331() {
+	
+	City33.sendKeys("Pune");
+}
+
+
+public void ClickPostalCode33() {
+	
+	PostalCode33.sendKeys("413512");
+}
+
+
+public void ClickState33() {
+	
+	State33.sendKeys("Maharashtra");
+}
+
+public void ClockCountry33() {
+	
+	Country33.sendKeys("India");
+}
+
+
+public void ClickAddress() {
+	
+	AddAdress.click();
+	
+	
+
+	
+	driver.navigate().back();
+	
+	driver.navigate().back();
+	
+	try {
+		Thread.sleep(4000);
+	} catch (InterruptedException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+}
+
+
+
+
+
+
+public void ClickContinue() {
+	
+	Continue.click();
+}
+
+
+
+ public void ClickDiclofenac() {
+	 
+
+	 
+	 boolean Diclofenacs=Diclofenac.isSelected();
+		if (Diclofenacs) {
+
+			System.out.println("item is not  selected ");
+
+		} else {
+			System.out.println("Diclofenac item is selected");
+		}
+
+		
+		Diclofenac.click();
+	 
+	try {
+		Thread.sleep(2000);
+	} catch (InterruptedException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+ }
+ 
+ public void ClickContinue1() {
+	 
+	 Continue1.click();
+ }
+
+ 
+public void ClickAmoxicillin() {
+	
+	
+	
+	boolean Amoxicillins=Amoxicillin.isSelected();
+	if (Amoxicillins) {
+
+		System.out.println("item is not  selected ");
+
+	} else {
+		System.out.println("Amoxicillin item is selected");
+	}
+
+	Amoxicillin.click();
+	
+	
+	try {
+		Thread.sleep(2000);
+	} catch (InterruptedException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+}
+
+
+public void ClickContinue2() {
+	
+	
+	Continue2.click();
+	
+}
+
+
+public void ClickAceclofenac() {
+	
+	
+	
+	boolean Aceclofenacs=Aceclofenac.isSelected();
+	if (Aceclofenacs) {
+
+		System.out.println("item is not  selected ");
+
+	} else {
+		System.out.println("Aceclofenac item is selected");
+	}
+
+	Aceclofenac.click();
+	try {
+		Thread.sleep(4000);
+	} catch (InterruptedException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	
+}
+
+
+public void Clickcheckout2() {
+	
+	checkout2.click();
+	
+}
+
+public void ClickAddressLineOne33() {
+	
+	
+	AddressLineOne33.sendKeys("Shivaji maharaj Square");
+}
+
+public void ClickAddressLineTwo33 () {
+	
+	AddressLineTwo33.sendKeys("Sambhaji Maharaj Colony");
+	
+}
+
+
+public void ClickCity33() {
+	
+	City33.sendKeys("Pune");
+	
+}
+
+
+public void ClickPostalCode3333 () {
+	
+	PostalCode3333.sendKeys("413512");
+	
+}
+
+
+public void ClickState3333() {
+	
+	State3333.sendKeys("Maharashtra");
+}
+
+public void ClickCountry3333() {
+	
+	Country3333.sendKeys("India");
+}
+
+
+public void ClickAddAdress33() {
+	
+	AddAdress33.click();
+}
+
+
+
+}
+
+
+
+
+	
+	
+
