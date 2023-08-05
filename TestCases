@@ -1,0 +1,223 @@
+package TestCases;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.FindBy;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import resources.TestBase;
+
+public class SignUpUserScenario extends TestBase {
+	
+	
+
+	WebDriver driver = new ChromeDriver();
+	@BeforeTest
+	public void setup()
+	{
+		
+		driver.get("http://localhost:8081/medicare/");
+		
+		
+	}
+	
+	@Test
+	public void SignUpUser() {
+		
+		WebPage obj=new WebPage(driver);
+		
+		obj.ClickSignup1();
+		
+		obj.FirstName1();
+		
+		obj.LastName1();
+		
+		obj.EmailId1();
+		
+		obj.ClickContact1();
+		
+		obj.EnterPass1();
+		
+		obj.Confirmpass1();
+		
+		obj.ClickUser();
+		
+		obj.NextBuliding1();
+		
+		obj.PutAddress1();
+		
+		obj.PutAddress21();
+		
+		obj.EnterCity1();
+		
+		obj.EnterPostaCode1();
+		
+		obj.EnterState1();
+		
+		obj.Entercountry1();
+		
+		obj.EnterNext1();
+		
+		obj.clickConfirm1();
+		
+		obj.clickLogin1();
+		
+		obj.ClickLogMail1();
+		
+		obj.ClickLogPassword1();
+		
+		obj.ClickLogin12();
+		
+		obj.ParacetamolVeiw();
+		
+		obj.AddtoCart();
+		
+		obj.ClickCheckout();
+		
+		obj.ClickAddressLineOne();
+		
+		obj.ClickAddressLineTwo();
+		
+		obj.ClickCity33();
+		
+		obj.ClickPostalCode33();
+		
+		obj.ClickState33();
+		
+		obj.ClockCountry33();
+		
+		obj.ClickAddress();
+		
+		
+		obj.ClickContinue();
+		
+		obj.ClickDiclofenac();
+		
+		obj.ClickContinue1();
+		
+		obj.ClickAmoxicillin();
+		
+		obj.ClickContinue2();
+		
+		obj.ClickAceclofenac();
+		
+		obj.Clickcheckout2();
+		
+		obj.ClickAddressLineOne33();
+		
+		obj.ClickAddressLineTwo33();
+		
+		obj.ClickCity331();
+		
+		obj.ClickPostalCode3333();
+		
+		obj.ClickState3333();
+		
+		obj.ClickCountry3333();
+		
+		obj.ClickAddAdress33();
+		
+		
+	}
+	
+}
+
+
+package PageObject;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import TestCases.WebPage;
+import resources.TestBase;
+
+public class Call extends TestBase{
+	
+	
+	WebDriver driver = new ChromeDriver();
+	
+	
+	@BeforeTest
+	public void setup()
+	{
+		
+		driver.get("http://localhost:8081/medicare/");
+		
+		
+	}
+	
+	@Test
+	
+	public void SignUpSupplier()
+	{
+		WebPage obj=new WebPage(driver); 
+		
+		
+		
+		
+		obj.ClickSign();
+		
+		obj.FirstName();
+		
+		obj.LastName();
+		
+		obj.EmailId();
+		
+		obj.ClickContact();
+		
+		obj.EnterPass();
+		
+		obj.Confirmpass();
+		
+		obj.ClickSupplier();
+		
+		obj.NextBuliding();
+		
+		obj.PutAddress();
+		
+		obj.PutAddress2();
+		
+		obj.EnterCity();
+		
+		obj.EnterPostaCode();
+		
+		obj.EnterState();
+		
+		obj.Entercountry();
+		
+		obj.EnterNext();
+		
+		obj.clickConfirm();
+		
+		obj.clickLogin();
+		
+		obj.ClickLogMail();
+		
+		obj.ClickLogPassword();
+		
+		obj.ClickLogin1();
+		
+		obj.ClickShubham();
+		
+		obj.ClickLogOut();
+		
+		
+	
+     }
+
+	
+	
+		
+		
+	
+	}
+	
+
+    	
+    	 
+
+
+
